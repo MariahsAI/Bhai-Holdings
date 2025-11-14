@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MX1 Trading Platform — Business Overview</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MX1 Trading Platform - Business Overview">
+    <meta property="og:description" content="AI-powered cryptocurrency trading platform with proven $47K revenue and $185M trading volume">
+    <meta property="og:image" content="https://mariahsai.github.io/og-image.png">
+    <meta property="og:type" content="website">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0f0f1e;
+            color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 40px 20px 30px;
+            background: radial-gradient(ellipse at center, rgba(138, 43, 226, 0.15) 0%, rgba(15, 15, 30, 1) 70%);
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+        
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+        
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #8a2be2 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .powered-by {
+            font-size: 16px;
+            color: #00d4ff;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            color: #b0b0b0;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.4;
+        }
+        
+        .section-divider {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #8a2be2 50%, transparent 100%);
+            margin: 20px auto;
+        }
+        
+        /* Hero Stats */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .stat-card {
+            background: rgba(26, 26, 46, 0.6);
+            border: 2px solid rgba(138, 43, 226, 0.4);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            border-color: rgba(138, 43, 226, 0.8);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+        }
+        
+        .stat-number {
+            font-size: 42px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #00d4ff 0%, #8a2be2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #b0b0b0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 60px 20px;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+        }
+        
+        .content-section:last-of-type {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            font-size: 38px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #00d4ff 0%, #8a2be2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-subtitle {
+            font-size: 14px;
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        
+        .content-text {
+            font-size: 18px;
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            max-width: 900px;
+        }
+        
+        /* Value Proposition Box */
+        .value-prop-box {
+            background: rgba(138, 43, 226, 0.1);
+            border-left: 4px solid #8a2be2;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .value-prop-box p {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        /* Feature Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: rgba(26, 26, 46, 0.6);
+            border: 2px solid rgba(138, 43, 226, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: rgba(138, 43, 226, 0.6);
+            transform: translateY(-3px);
+        }
+        
+        .feature-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #00d4ff;
+            margin-bottom: 12px;
+        }
+        
+        .feature-description {
+            font-size: 15px;
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+        
+        /* AI Agents List */
+        .agents-container {
+            background: rgba(26, 26, 46, 0.6);
+            border: 2px solid rgba(138, 43, 226, 0.4);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 30px;
+        }
+        
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .agent-item {
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.2s ease;
+        }
+        
+        .agent-item:hover {
+            background: rgba(138, 43, 226, 0.2);
+            border-color: #00d4ff;
+        }
+        
+        .agent-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #00d4ff;
+            margin-bottom: 8px;
+        }
+        
+        .agent-function {
+            font-size: 14px;
+            color: #b0b0b0;
+            line-height: 1.4;
+        }
+        
+        /* Proof Points */
+        .proof-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .proof-card {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2) 0%, rgba(0, 212, 255, 0.1) 100%);
+            border: 2px solid rgba(138, 43, 226, 0.5);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .proof-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        
+        .proof-label {
+            font-size: 16px;
+            color: #e0e0e0;
+            font-weight: 500;
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            background: radial-gradient(ellipse at center, rgba(138, 43, 226, 0.2) 0%, rgba(15, 15, 30, 1) 70%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        .cta-text {
+            font-size: 20px;
+            color: #b0b0b0;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #8a2be2 0%, #00d4ff 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.5);
+        }
+        
+        .cta-button.secondary {
+            background: rgba(138, 43, 226, 0.2);
+            border: 2px solid #8a2be2;
+        }
+        
+        .cta-button.secondary:hover {
+            background: rgba(138, 43, 226, 0.3);
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(15, 15, 30, 0.8);
+            border-top: 1px solid rgba(138, 43, 226, 0.2);
+        }
+        
+        .footer-text {
+            font-size: 14px;
+            color: #606060;
+            margin-bottom: 10px;
+        }
+        
+        .footer-brand {
+            font-size: 12px;
+            color: #00d4ff;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 48px;
+            }
+            
+            .tagline {
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .stat-number {
+                font-size: 32px;
+            }
+            
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .agents-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <a href="portfolio%20(1).html" class="back-link">← Back to Portfolio</a>
+            <div class="logo-text">MX1</div>
+            <p class="powered-by">Powered by Mariah™</p>
+            <p class="tagline">Interactive, Automatic, Touchless Trading Platform</p>
+        </div>
+    </div>
+    
+    <div class="section-divider"></div>
+    
+    <!-- Hero Stats -->
+    <div class="hero-stats">
+        <div class="stat-card">
+            <div class="stat-number">$47K</div>
+            <div class="stat-label">Revenue Generated</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">$185M</div>
+            <div class="stat-label">Trading Volume</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">70-75%</div>
+            <div class="stat-label">Win Rate</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Autonomous Trading</div>
+        </div>
+    </div>
+    
+    <!-- Executive Summary -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-subtitle">Executive Summary</div>
+            <h2 class="section-title">Already Profitable. Ready to Scale.</h2>
+            
+            <div class="value-prop-box">
+                <p>We're not asking you to bet on a concept—we're asking you to scale what's already proven profitable in testing.</p>
+            </div>
+            
+            <p class="content-text">
+                MX1 is an interactive, automatic, touchless trading platform that's been in development for 2 years. During our testing phase alone—with just 11 pilot users—we've already generated <strong>$47,000 in actual revenue in just ONE MONTH</strong> through commission fees and processed <strong>$185 million in trading volume</strong>.
+            </p>
+            
+            <p class="content-text">
+                While competitors are still pitching ideas, we're delivering proven results. Our platform operates 24/7, executing institutional-grade trades completely hands-free with consistent 70-75% win rates.
+            </p>
+        </div>
+    </section>
+    
+    <!-- The Technology -->
+    <section class="content-section" style="background: rgba(26, 26, 46, 0.3);">
+        <div class="container">
+            <div class="section-subtitle">The Technology</div>
+            <h2 class="section-title">13 Specialized AI Agents Working as One</h2>
+            
+            <p class="content-text">
+                We've designed 13 specialized AI agents (Fusion 1.0) that work together to predict crypto prices and execute trades automatically. While you sleep, our fusion controller—<strong>Mariah™</strong>—orchestrates these agents to analyze market sentiment, track whale movements, process technical patterns, and execute institutional-grade trades.
+            </p>
+            
+            <div class="agents-container">
+                <h3 style="font-size: 24px; color: #00d4ff; margin-bottom: 15px;">Meet the Fusion 1.0 Agent Network</h3>
+                <p style="color: #b0b0b0; margin-bottom: 20px;">Each agent specializes in a specific aspect of market analysis, creating a comprehensive trading intelligence system.</p>
+                
+                <div class="agents-grid">
+                    <div class="agent-item">
+                        <div class="agent-name">Mariah (Fusion Controller)</div>
+                        <div class="agent-function">Orchestrates all agents and makes final trading decisions</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Technical Analysis Agent</div>
+                        <div class="agent-function">Processes price patterns and technical indicators</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Whale Tracker</div>
+                        <div class="agent-function">Monitors large wallet movements and institutional activity</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Sentiment Analyzer</div>
+                        <div class="agent-function">Analyzes social media and news sentiment</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Trend Predictor</div>
+                        <div class="agent-function">Identifies emerging market trends before they peak</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Volatility Monitor</div>
+                        <div class="agent-function">Assesses market volatility and risk levels</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Entry/Exit Optimizer</div>
+                        <div class="agent-function">Calculates optimal entry and exit points</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Risk Manager</div>
+                        <div class="agent-function">Manages position sizes and stop-loss levels</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Market Scanner</div>
+                        <div class="agent-function">Continuously scans markets for opportunities</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Portfolio Balancer</div>
+                        <div class="agent-function">Maintains optimal portfolio allocation</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Execution Agent</div>
+                        <div class="agent-function">Executes trades with optimal timing and slippage</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Performance Tracker</div>
+                        <div class="agent-function">Monitors and reports trading performance</div>
+                    </div>
+                    <div class="agent-item">
+                        <div class="agent-name">Learning Engine</div>
+                        <div class="agent-function">Continuously improves strategies from market data</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; padding: 30px; background: rgba(138, 43, 226, 0.1); border-radius: 15px; border-left: 4px solid #00d4ff;">
+                <h3 style="font-size: 22px; color: #00d4ff; margin-bottom: 15px;">Fusion 2.0: The Next Evolution</h3>
+                <p style="color: #e0e0e0; font-size: 16px; line-height: 1.6;">
+                    Our next-generation system is already in development, featuring enhanced machine learning capabilities, multi-exchange arbitrage, advanced risk modeling, and real-time market adaptation. Fusion 2.0 will unlock exponentially greater growth potential.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-subtitle">How It Works</div>
+            <h2 class="section-title">Professional Trading, Zero Effort</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-title">Connect</div>
+                    <div class="feature-description">
+                        Link your exchange account securely through API. Your funds never leave your exchange—we only execute trades on your behalf.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Configure</div>
+                    <div class="feature-description">
+                        Set your risk tolerance, investment amount, and trading preferences. Our system adapts to your parameters.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Activate</div>
+                    <div class="feature-description">
+                        Mariah and the 13 AI agents immediately begin analyzing markets and executing trades 24/7—completely touchless.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Monitor</div>
+                    <div class="feature-description">
+                        Track your portfolio performance in real-time through our intuitive dashboard. Full transparency on every trade.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Profit</div>
+                    <div class="feature-description">
+                        Watch as institutional-grade strategies generate returns while you focus on what matters. No charts, no stress.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Stay Secure</div>
+                    <div class="feature-description">
+                        Bank-level encryption, API-only access, and non-custodial architecture ensure your assets remain protected.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Proven Results -->
+    <section class="content-section" style="background: rgba(26, 26, 46, 0.3);">
+        <div class="container">
+            <div class="section-subtitle">Proven Results</div>
+            <h2 class="section-title">Real Numbers from Real Trading</h2>
+            
+            <p class="content-text">
+                These aren't projections or simulations. These are actual results from our testing phase with real money, real trades, and real users—achieved in just 30 days.
+            </p>
+            
+            <div class="proof-points">
+                <div class="proof-card">
+                    <div class="proof-number">$47,000</div>
+                    <div class="proof-label">Revenue Generated<br>(In Just 1 Month)</div>
+                </div>
+                
+                <div class="proof-card">
+                    <div class="proof-number">$185M</div>
+                    <div class="proof-label">Total Trading<br>Volume Processed</div>
+                </div>
+                
+                <div class="proof-card">
+                    <div class="proof-number">11</div>
+                    <div class="proof-label">Pilot Users<br>in Testing Phase</div>
+                </div>
+                
+                <div class="proof-card">
+                    <div class="proof-number">70-75%</div>
+                    <div class="proof-label">Consistent<br>Win Rate</div>
+                </div>
+                
+                <div class="proof-card">
+                    <div class="proof-number">24/7</div>
+                    <div class="proof-label">Autonomous<br>Operation</div>
+                </div>
+                
+                <div class="proof-card">
+                    <div class="proof-number">30 Days</div>
+                    <div class="proof-label">To Generate<br>$47K Revenue</div>
+                </div>
+            </div>
+            
+            <div class="value-prop-box" style="margin-top: 40px;">
+                <p>If we generated $47,000 in 30 days with just 11 users, imagine scaling to 1,000 users—that's $4.27M per month, or $51M+ annually. At 10,000 users: $512M+ annual revenue potential.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Market Opportunity -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-subtitle">Market Opportunity</div>
+            <h2 class="section-title">Massive Market, Perfect Timing</h2>
+            
+            <p class="content-text">
+                The cryptocurrency market continues to mature, with institutional adoption accelerating. Retail investors are seeking professional-grade tools that were previously available only to hedge funds and trading firms.
+            </p>
+            
+            <p class="content-text">
+                MX1 democratizes institutional trading capabilities. We're not just another trading bot—we're a comprehensive AI trading firm accessible to anyone with an internet connection.
+            </p>
+            
+            <div class="features-grid" style="margin-top: 40px;">
+                <div class="feature-card">
+                    <div class="feature-title">$2.5 Trillion+</div>
+                    <div class="feature-description">
+                        Global cryptocurrency market capitalization with continuous growth trajectory
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">420 Million+</div>
+                    <div class="feature-description">
+                        Global crypto users seeking better trading solutions and higher returns
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">$500B+</div>
+                    <div class="feature-description">
+                        Daily trading volume across major cryptocurrency exchanges globally
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Competitive Advantage -->
+    <section class="content-section" style="background: rgba(26, 26, 46, 0.3);">
+        <div class="container">
+            <div class="section-subtitle">Competitive Advantage</div>
+            <h2 class="section-title">Why MX1 Wins</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-title">Already Profitable</div>
+                    <div class="feature-description">
+                        Unlike competitors, we have proven revenue and real trading results, not just a whitepaper and promises.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Multi-Agent Intelligence</div>
+                    <div class="feature-description">
+                        13 specialized AI agents working in harmony provide superior analysis compared to single-algorithm competitors.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Institutional-Grade Performance</div>
+                    <div class="feature-description">
+                        70-75% win rates rival professional trading firms, delivered in a completely automated package.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Non-Custodial Security</div>
+                    <div class="feature-description">
+                        Funds stay on your exchange. We never hold customer assets, eliminating custodial risk entirely.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Fusion 2.0 Pipeline</div>
+                    <div class="feature-description">
+                        Next-generation system already in development will dramatically expand capabilities and market reach.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">True Touchless Trading</div>
+                    <div class="feature-description">
+                        Completely automated from analysis to execution. No manual intervention required, ever.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Business Model -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-subtitle">Business Model</div>
+            <h2 class="section-title">Scalable, Recurring Revenue</h2>
+            
+            <p class="content-text">
+                MX1 operates on a commission-based model, earning a percentage of profitable trades. This aligns our incentives perfectly with our users—we only succeed when they succeed.
+            </p>
+            
+            <div class="features-grid" style="margin-top: 40px;">
+                <div class="feature-card">
+                    <div class="feature-title">Performance-Based Fees</div>
+                    <div class="feature-description">
+                        We charge a percentage commission only on profitable trades. No profits for users means no fees—complete alignment of interests.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">High Lifetime Value</div>
+                    <div class="feature-description">
+                        Users who see consistent returns become long-term customers, generating recurring revenue month after month.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Low Customer Acquisition Cost</div>
+                    <div class="feature-description">
+                        Proven results and word-of-mouth from satisfied users drive organic growth and reduce marketing spend.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Scalable Infrastructure</div>
+                    <div class="feature-description">
+                        Cloud-based architecture allows us to onboard thousands of users without proportional cost increases.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="value-prop-box" style="margin-top: 40px;">
+                <p>$47K from 11 users in ONE MONTH = ~$4,273 per user monthly. At 10,000 users, that's $42.7M in monthly revenue or $512M+ annually.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- The Ask -->
+    <section class="content-section" style="background: rgba(26, 26, 46, 0.3);">
+        <div class="container">
+            <div class="section-subtitle">Investment Opportunity</div>
+            <h2 class="section-title">Scale What's Already Working</h2>
+            
+            <p class="content-text">
+                We've proven the technology works. We've proven the market wants it. We've proven we can generate revenue. Now we need capital to scale from 11 users to 10,000+ users and beyond.
+            </p>
+            
+            <p class="content-text">
+                <strong>Investment funds will be used for:</strong>
+            </p>
+            
+            <div class="features-grid" style="margin-top: 30px;">
+                <div class="feature-card">
+                    <div class="feature-title">Marketing & User Acquisition</div>
+                    <div class="feature-description">
+                        Aggressive customer acquisition campaigns targeting crypto traders and retail investors
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Infrastructure Scaling</div>
+                    <div class="feature-description">
+                        Expand server capacity and processing power to handle 10,000+ concurrent users
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Fusion 2.0 Development</div>
+                    <div class="feature-description">
+                        Accelerate development of next-generation AI system with enhanced capabilities
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Team Expansion</div>
+                    <div class="feature-description">
+                        Hire additional AI engineers, traders, and customer support personnel
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Exchange Partnerships</div>
+                    <div class="feature-description">
+                        Secure partnerships with additional exchanges for broader market access
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-title">Compliance & Security</div>
+                    <div class="feature-description">
+                        Ensure regulatory compliance and implement enterprise-grade security measures
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Join the Revolution in Automated Trading</h2>
+            <p class="cta-text">
+                MX1 isn't a concept or a promise—it's a proven, profitable platform ready for explosive growth. Partner with us to bring institutional-grade AI trading to millions of investors worldwide.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://mariahsai.github.io/Business-Overview/index.html" class="cta-button">View Investment Deck</a>
+                <a href="mailto:contact@bhaiholdings.com?subject=MX1%20Demo%20Request" class="cta-button secondary">Schedule a Demo</a>
+                <a href="portfolio%20(1).html" class="cta-button secondary">Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <p class="footer-text">Confidential Information | For Qualified Investors Only</p>
+        <p class="footer-text" style="margin-top: 15px; color: #808080;">
+            Past performance does not guarantee future results. Cryptocurrency trading involves substantial risk of loss.
+        </p>
+        <p class="footer-brand" style="margin-top: 20px;">MX1 TRADING PLATFORM | BHAI HOLDINGS, LLC</p>
+    </div>
+</body>
+</html>
