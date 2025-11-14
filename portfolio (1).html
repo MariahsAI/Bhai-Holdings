@@ -228,6 +228,10 @@
                 font-size: 32px;
             }
             
+            .section-subtitle {
+                font-size: 12px;
+            }
+            
             .projects-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -251,13 +255,14 @@
     <div class="section-divider"></div>
     
     <!-- Executive Summary -->
-    <section class="portfolio-section" style="padding: 10px 20px 40px; border-bottom: 1px solid rgba(138, 43, 226, 0.2);">
+    <section class="portfolio-section" style="padding: 40px 20px 60px; border-bottom: 1px solid rgba(138, 43, 226, 0.2);">
         <div class="container">
-            <div class="section-header" style="margin-bottom: 20px;">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <div class="section-subtitle">Overview</div>
                 <h2 class="section-title">Executive Summary</h2>
             </div>
-            <div class="exec-summary-box" style="max-width: 900px; margin: 0 auto; background: rgba(26, 26, 46, 0.6); border: 2px solid rgba(138, 43, 226, 0.5); border-radius: 20px; padding: 35px; box-shadow: 0 8px 30px rgba(138, 43, 226, 0.4), 0 0 40px rgba(138, 43, 226, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
-                <p style="font-size: 17px; color: #e0e0e0; line-height: 1.8; text-align: justify;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 18px; color: #e0e0e0; line-height: 1.8; text-align: left;">
                     BHAI Holdings is a diversified investment company with strategic positions across four key sectors: Financial Technology (Fintech), Oil & Gas (Energy), Gold Mining, and Data Centers. Our portfolio encompasses wholly-owned subsidiaries, minority equity stakes, and exclusive representation agreements, positioning us as a significant player in both traditional and emerging markets.
                 </p>
             </div>
@@ -265,27 +270,7 @@
     </section>
     
     <style>
-        .exec-summary-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #8a2be2 0%, #00d4ff 100%);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-        
-        .exec-summary-box:hover {
-            border-color: rgba(138, 43, 226, 0.8);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 40px rgba(138, 43, 226, 0.5), 0 0 50px rgba(138, 43, 226, 0.3);
-        }
-        
-        .exec-summary-box:hover::before {
-            transform: scaleX(1);
-        }
+        /* Remove old exec summary styles */
     </style>
     
     <!-- Section 1: Wholly Owned Ventures -->
